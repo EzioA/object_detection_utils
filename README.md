@@ -28,9 +28,9 @@
 # 使用
 **crop_image_and_objects.py**  
 ```
-$ python crop_image_and_objects.py --data_dir dataset --mode voc --h_slice 2 --w slice 2
-$ python crop_image_and_objects.py --data_dir dataset --mode yolo --h_slice 2 --w slice 2
-$ python crop_image_and_objects.py --data_dir dataset --h_slice 2 --w slice 2 --crop_only
+$ python crop_image_and_objects.py --data_dir dataset --mode voc --h_slice 2 --w_slice 2
+$ python crop_image_and_objects.py --data_dir dataset --mode yolo --h_slice 2 --w_slice 2
+$ python crop_image_and_objects.py --data_dir dataset --h_slice 2 --w_slice 2 --crop_only
 ```
 指定的目录 _**data\_dir**_ 包含全部图像及对应的标注文件(.txt for YOLO, or .xml for VOC)，_**h\_slice**_ 与 _**w\_slice**_ 指定将高、宽分别切割几份。  
 脚本同时支持仅仅切割图像而不处理标注文件，参数为 _**crop\_only**_。  
@@ -64,8 +64,8 @@ dataset
 
 **draw_gt_images.py**  
 ```
- $ python draw_gt_images.py --data_dir infer_dataset/voc/VOCdevkit --voc
- $ python draw_gt_images.py --data_dir infer_dataset
+ $ python draw_gt_images.py --data_dir dataset/voc/VOCdevkit --voc
+ $ python draw_gt_images.py --data_dir dataset
 ```
 指定参数 _**voc**_ 后，绘制由 _**data\_dir**_ 指定的VOC数据集中test子集的ground truth图像；  
 不指定参数 _**voc**_ 时，绘制 _**data\_dir**_ 中全部图像的ground truth图像，此时 _**data\_dir**_ 应包含全部图像及对应标注文件。  
