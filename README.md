@@ -5,9 +5,9 @@
 **crop_image_and_objects.py**  
 适用于对图像和标注文件进行同时切割，子图像中包含对应子标注文件中个的局部目标；当图像尺寸极大时可考虑使用  
 举例，将下图切割为4个（2x2）子块：  
-![panda](https://github.com/EzioA/ObjectDetectionAnnotationScissors/blob/main/assets/panda_gt.png)  
+![panda](https://github.com/EzioA/object_detection_utils/blob/main/assets/panda_gt.png)  
 第一个子块及对应标注应如下图所示:  
-![panda_patch](https://github.com/EzioA/ObjectDetectionAnnotationScissors/blob/main/assets/panda_0_gt.png)  
+![panda_patch](https://github.com/EzioA/object_detection_utils/blob/main/assets/panda_0_gt.png)  
 目前仅支持规则的无覆盖切割;  
 目前支持voc和yolo两种标注数据的切割，在指定切割模式后，对应生成voc和yolo的子文件夹;  
 给定的路径文件夹必须包含全部图像和对应标注文件;
